@@ -1,0 +1,34 @@
+# Root .gitignore for MERN Blog App
+
+# Dependencies
+node_modules/
+anurag-blog-app-backend-b2-master/node_modules/
+blog-app-frontend-b2-master/node_modules/
+
+# Environment Variables
+.env
+anurag-blog-app-backend-b2-master/.env
+blog-app-frontend-b2-master/.env
+*.local
+
+# Build outputs
+dist/
+dist-ssr/
+blog-app-frontend-b2-master/dist/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor / System
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.sln
+*.sw?
