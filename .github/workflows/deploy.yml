@@ -20,8 +20,8 @@ jobs:
           node-version: '20'
 
       - name: Install and Build
+        working-directory: ./frontend
         run: |
-          cd frontend
           npm install
           npm run build
           cp dist/index.html dist/404.html
