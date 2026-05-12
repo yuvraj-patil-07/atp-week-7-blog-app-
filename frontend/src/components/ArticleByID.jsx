@@ -50,7 +50,7 @@ function ArticleByID() {
       setLoading(true);
 
       try {
-        const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/user-api/article/${id}`, { withCredentials: true });
+        const res = await axios.get(`https://atp-week-7-blog-app-1.onrender.com/user-api/article/${id}`, { withCredentials: true });
 
         setArticle(res.data.payload);
       } catch (err) {
