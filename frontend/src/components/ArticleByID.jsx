@@ -80,7 +80,7 @@ function ArticleByID() {
 
     try {
       const res = await axios.patch(
-        `${import.meta.env.VITE_API_BASE_URL}/author-api/articles`,
+        `https://atp-week-7-blog-app-1.onrender.com/author-api/articles`,
         { articleId: article._id, isArticleActive: newStatus },
         { withCredentials: true },
       );
@@ -114,7 +114,7 @@ function ArticleByID() {
     //add artcileId
     commentObj.articleId = article._id;
     console.log(commentObj);
-    let res = await axios.put(`${import.meta.env.VITE_API_BASE_URL}/user-api/articles`, commentObj, { withCredentials: true });
+    let res = await axios.put(`https://atp-week-7-blog-app-1.onrender.com/user-api/articles`, commentObj, { withCredentials: true });
     if (res.status === 200) {
       
       setArticle(res.data.payload);
